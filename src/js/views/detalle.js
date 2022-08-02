@@ -12,7 +12,7 @@ const Detalle = () => {
 	}, []);
 
 	return (
-		<div className="container_detalle">
+		<div className="detallecyp">
 			<div className="detallecharacter">
 				<div className="card_item">
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPCdfN9y_MxN3Jn7_gJIDe20Bp-0u5IyZbg&usqp=CAU" />

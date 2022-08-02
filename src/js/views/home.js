@@ -8,22 +8,22 @@ export const Home = () => {
 
 	return (
 		<div className="container_home">
-			<h1>Start Wars </h1>
+			<h1>Start Wars Blog </h1>
 			<div className="card_home">
 				<div className="card_item">
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPCdfN9y_MxN3Jn7_gJIDe20Bp-0u5IyZbg&usqp=CAU" />
 					<h3>Characters</h3>
 					<p> Star War Characters</p>
 					<Link className="card_botton" to={`/characters`}>
-						More Info!
+					<button type="button" class="btn btn-warning mb-4">More Characters!</button>
 					</Link>
 				</div>
 				<div className="card_item">
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs7ZUd3ktrIPKvm1HzJx4k94PpYF6cmwPFuw&usqp=CAU" />
 					<h3>Planets</h3>
-					<>star wars Planets </>
+					<p>Star wars Planets </p>
 					<Link className="card_botton" to={`/planets`}>
-						More Info!
+					<button type="button" class="btn btn-warning mb-2">More Planets!</button>
 					</Link>
 				</div>
 			</div>

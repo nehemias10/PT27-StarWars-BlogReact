@@ -1,4 +1,4 @@
-/* 
+
  body{
     background-image: url(https://images2.alphacoders.com/100/1006252.jpg);
     background-size: cover;
@@ -7,10 +7,76 @@
   background-position: center center;
   background-attachment: fixed;
 }
-*/
 
 
-.container_detalle{
-    background-color: white;
+
+
+
+.detallecyp{
+  background-color: black;
+  text-align: center;
+  width: 315px;
+  height: 400px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  border: 3px solid yellow;
+  justify-content: center;
+    margin: auto;
+  
+  border-radius: 25px;
+}
+
+.main{
+  text-align: center;
+ color: white;
+  
+}
+.maincharacters{
+  display: flex;
+  flex-direction: column;
+}
+.card_character{
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
     
+}
+.footer{
+  margin-bottom: 1cm;
+}
+
+img{
+  border: 3px solid yellow;
+  
+  border-radius: 25px;
+  margin-right: 10px;
+  
+}
+
+.iconosw{
+  width: 70px;
+  height: 40px;
+}
+
+.logo{
+  margin-top: 15px;
+  width: 100px;
+  height: 60px;
+}
+.logo_imagen{
+  width: 100%;
+}
+
+.card_item{
+ 
+  text-align: center;
+ 
+  justify-content: center;
+  
+  
+  
+  margin: auto;
 }

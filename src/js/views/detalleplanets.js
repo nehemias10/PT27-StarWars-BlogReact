@@ -12,7 +12,7 @@ const DetallePlanets = () => {
 	}, []);
 
 	return (
-		<div className="container_detalle">
+		<div className="detallecyp">
 			<div className="card_detalle">
 				<div className="card_item">
 					<img src="" />

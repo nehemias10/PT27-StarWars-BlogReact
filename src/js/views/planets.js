@@ -6,8 +6,8 @@ const Planets = () => {
 	const { store, actions } = useContext(Context);
 	return (
 		<div>
-			<h2>Planets</h2>
-			<div className="card_character">
+			<h2 className="mt-3">Planets</h2>
+			<div className="card_character mt-3">
 				{store.planetas.map((el, index) => {
 					return (
 						<div className="card_character_item" key={index}>
@@ -15,7 +15,7 @@ const Planets = () => {
 							<h5>{el.name}</h5>
 							<div className="card_icons">
 								<Link className="card_botton" to={`/detallePlanets/${el.uid}`}>
-									See Details
+								<button type="button" class="btn btn-warning mb-2">See More Details</button>
 								</Link>
 								
 							</div>
