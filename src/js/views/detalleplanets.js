@@ -22,7 +22,7 @@ const DetallePlanets = () => {
 					<p>Terrain: {store.detallePlaneta.terrain}</p>
 
 					<Link className="card_botton" to={"/planets"}>
-						Back
+					<button type="button" class="btn btn-warning ">BACK</button>
 					</Link>
 				</div>
 			</div>

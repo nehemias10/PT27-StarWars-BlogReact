@@ -15,12 +15,12 @@ const Detalle = () => {
 		<div className="detallecyp">
 			<div className="detallecharacter">
 				<div className="card_item">
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPCdfN9y_MxN3Jn7_gJIDe20Bp-0u5IyZbg&usqp=CAU" />
+					<img src=""/>
 					<h4>Name: {store.detallePersonaje.name}</h4>
 					<p> Height: {store.detallePersonaje.height}</p>
 					<p>Hair Color: {store.detallePersonaje.hair_color}</p>
 					<Link className="card_botton" to={"/characters"}>
-						Back
+					<button type="button" class="btn btn-warning ">BACK</button>
 					</Link>
 				</div>
 			</div>
