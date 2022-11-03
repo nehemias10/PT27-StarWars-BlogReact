@@ -19,7 +19,12 @@ export const Characters = () => {
 								<Link className="card_botton color-primary" to={`/detalle/${el.uid}`}>
 								<button type="button" class="btn btn-warning mb-2">See More Details</button>
 								</Link>
-								
+								<span
+									onClick={() => {
+										actions.agregarFavoritos(el.uid);
+									}}>
+									<i className="far fa-heart" />
+								</span>
 							</div>
 						</div>
 					);

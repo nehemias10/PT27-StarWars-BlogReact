@@ -5,7 +5,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 			planetas: [],
 
 			detallePersonaje: {},
-			detallePlaneta: {}
+			detallePlaneta: {},
+			favoritos: [],
+			mostrarFavoritos: false
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -42,6 +44,24 @@ const getState = ({ getStore, getActions, setStore }) => {
 						setStore({ detallePlaneta: data.result.properties });
 					})
 					.catch(error => console.log("error", error));
+			},
+			agregarFavoritos: id => {
+				const store = getStore();
+				setStore({ favoritos: [...store.favoritos, store.personajes[id - 1]] });
+			},
+			eliminarFavoritos: index => {
+				const store = getStore();
+
+				const eliminar = store.favoritos.filter((el, i) => {
+					return index !== i;
+				});
+				console.log(eliminar);
+				setStore({ favoritos: eliminar });
+				console.log(store.favoritos);
+			},
+			setMostrarFavoritos: e => {
+				const store = getStore();
+				setStore({ mostrarFavoritos: !store.mostrarFavoritos });
 			}
 		}
 	};

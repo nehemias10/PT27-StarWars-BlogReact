@@ -84,3 +84,10 @@ img{
   
   margin: auto;
 }
+
+.favoritos{
+  background-color: black;
+  color: yellow;
+  width: 20%;
+  align-items: center;
+}

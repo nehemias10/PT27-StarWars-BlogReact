@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Favorites from "./favorites";
 export const Navbar = () => {
 	return (
 		<nav>
@@ -21,6 +21,7 @@ export const Navbar = () => {
 				<button type="button" class="btn btn-warning">PLANETS</button>
 				</Link>
 			</div>
+			<Favorites />
 		</nav>
 	);
 };
